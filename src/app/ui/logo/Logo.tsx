@@ -1,4 +1,6 @@
-/** Logo SVG da loja. */
+/** Logo SVG da loja.
+ * @author Alexandre Raminelli
+ */
 export default function Logo() {
   return (
     <svg viewBox="0 0 96 32" fill="none" xmlns="http://www.w3.org/2000/svg" className="min-h-7">

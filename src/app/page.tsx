@@ -1,6 +1,9 @@
 import Image from "next/image"
 
-/** Página */
+/**
+ * Página inicial do site.
+ * @author Alexandre Raminelli Junior
+ */
 export default function Home() {
   return (
     <main className="flex flex-col items-center justify-center h-screen w-full">
