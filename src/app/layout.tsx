@@ -1,5 +1,6 @@
-import type { Metadata } from "next" // formato dos metadados
 import { inter } from "@/app/ui/fonts/fonts" // fontes
+import Header from "@/app/ui/layout/header/Header"
+import type { Metadata } from "next" // formato dos metadados
 import "./globals.css"
 
 /**
@@ -26,6 +27,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} antialiased`}>
+        {/* Cabeçalho */}
+        <Header />
         {/* Conteúdo da página */}
         {children}
       </body>
