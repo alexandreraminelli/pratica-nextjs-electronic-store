@@ -6,6 +6,10 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  --color14: #989898;
+  --color17: #656565;
+  --color22: #f5f5f5;
 }
 
 /* Tema escuro */

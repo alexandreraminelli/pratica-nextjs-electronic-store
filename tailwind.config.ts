@@ -5,18 +5,16 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Cores do tema
+        /** Cor do background. */
         background: "var(--background)",
+        /** Cor que fornece contraste ao background. */
         foreground: "var(--foreground)",
 
-        // Cores secundárias
-        charcoal: "#2E2E2E",
-        white: {
-          smoke: "#F5F5F5",
-        },
-        gray: {
-          dim: "#656565",
-          battleship: "#989898",
+        /** Cores do style guide. */
+        color: {
+          "14": "var(--color14)",
+          "17": "var(--color17)",
+          "22": "var(--color22)",
         },
       },
     },
