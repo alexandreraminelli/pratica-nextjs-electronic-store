@@ -18,6 +18,8 @@ interface SearchBoxProps {
 export default function SearchBox({ placeholder = "Search", className }: SearchBoxProps) {
   return (
     <div
+      role="searchbox"
+      // styles:
       className={`
         flex flex-row
         bg-color-22 rounded-lg
