@@ -1,5 +1,7 @@
 import LogoLink from "@/app/ui/logo/LogoLink"
+import SearchBox from "@/app/ui/navigation/SearchBox"
 import { MenuIcon } from "lucide-react"
+import MainNavbar from "./navbar/MainNavbar"
 
 /**
  * Componente superior do cabeçalho.
@@ -14,12 +16,17 @@ export default function HeaderTop() {
       className="
         py-6 pd-container
         flex flex-row items-center justify-between
+        bg-background
       "
     >
       <LogoLink />
 
+      {/* Desktop */}
+      <SearchBox className="max-sm:hidden" />
+      <MainNavbar className="max-md:hidden" />
+
       {/* Mobile */}
-      <MenuIcon width={40} height={40} />
+      <MenuIcon width={40} height={40} className="lg:hidden" />
     </div>
   )
 }
