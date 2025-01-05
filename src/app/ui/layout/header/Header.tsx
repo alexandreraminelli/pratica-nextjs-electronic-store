@@ -8,7 +8,7 @@ import Subnav from "./Subnav"
  */
 export default function Header() {
   return (
-    <header>
+    <header className="sticky top-0">
       <HeaderTop />
       <Subnav />
     </header>
