@@ -1,6 +1,10 @@
+"use client"
+
 import { mainNavbar } from "@/data/constants/navigation/mainNavbar" // links do navbar
 import NavLink from "@/data/model/navigation/NavLink"
+import clsx from "clsx" // classes condicionais
 import Link from "next/link"
+import { usePathname } from "next/navigation" // obter caminho da rota atual
 
 /**
  * Interface dos props do componente `MainNavbar`.
@@ -19,6 +23,9 @@ interface MainNavbarProps {
  * @author Alexandre Raminelli
  */
 export default function MainNavbar({ className }: MainNavbarProps) {
+  /** Caminho da rota atual. */
+  const pathname = usePathname()
+
   return (
     <nav className={className}>
       <ul
@@ -29,7 +36,7 @@ export default function MainNavbar({ className }: MainNavbarProps) {
         "
       >
         {mainNavbar.map((link, index) => (
-          <LinkNavbar key={index} link={link} />
+          <LinkNavbar key={index} link={link} active={pathname === link.href} />
         ))}
       </ul>
     </nav>
@@ -37,20 +44,32 @@ export default function MainNavbar({ className }: MainNavbarProps) {
 }
 
 /**
+ * Interface dos props do componente `LinkNavbar`.
+ *
+ * @author Alexandre Raminelli
+ */
+interface LinkNavbarProps {
+  /** Objeto do link a ser renderizado. */
+  link: NavLink
+  /** Se o link é da página atual. */
+  active: boolean
+}
+/**
  * Link do navbar principal.
  *
  * @author Alexandre Raminelli
  */
-function LinkNavbar({ link }: { link: NavLink }) {
+function LinkNavbar({ link, active }: LinkNavbarProps) {
   return (
     <li>
       <Link
         href={link.href} // endereço
         // estilos:
-        className="
-        text-base font-medium opacity-30
-        hover:opacity-100 transition-opacity
-        "
+        className={clsx(
+          `text-base font-medium opacity-30
+          hover:opacity-100 transition-opacity`,
+          { "opacity-100": active } // link ativo
+        )}
       >
         {link.text} {/* texto */}
       </Link>
