@@ -20,5 +20,5 @@ export default interface NavLink {
  */
 export interface NavLinkWithIcon extends NavLink {
   /** Componente de ícone do Lucide Icons. */
-  icon: LucideIcon
+  Icon: LucideIcon
 }

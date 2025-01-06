@@ -7,10 +7,10 @@ import { CameraIcon, Gamepad2Icon, HeadphonesIcon, LaptopIcon, SmartphoneIcon, W
  * @author Alexandre Raminelli
  */
 export const categoryNavbar: NavLinkWithIcon[] = [
-  { text: "Phones", href: "/smartphones", icon: SmartphoneIcon },
-  { text: "Computers", href: "/computers", icon: LaptopIcon },
-  { text: "Smart Watches", href: "/smartwatches", icon: WatchIcon },
-  { text: "Cameras", href: "/cameras", icon: CameraIcon },
-  { text: "Headphones", href: "/headphones", icon: HeadphonesIcon },
-  { text: "Gaming", href: "/gaming", icon: Gamepad2Icon },
+  { text: "Phones", href: "/smartphones", Icon: SmartphoneIcon },
+  { text: "Computers", href: "/computers", Icon: LaptopIcon },
+  { text: "Smart Watches", href: "/smartwatches", Icon: WatchIcon },
+  { text: "Cameras", href: "/cameras", Icon: CameraIcon },
+  { text: "Headphones", href: "/headphones", Icon: HeadphonesIcon },
+  { text: "Gaming", href: "/gaming", Icon: Gamepad2Icon },
 ]

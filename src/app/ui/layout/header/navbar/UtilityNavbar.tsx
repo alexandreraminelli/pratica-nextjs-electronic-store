@@ -25,22 +25,31 @@ export default function UtilityNavbar({ className }: UtilityNavbarProps) {
       `}
     >
       {utilityNavbar.map((link, index) => (
-        <UtilityLink key={index} icon={link.icon} text={link.text} href={link.href} />
+        <UtilityLink key={index} link={link} />
       ))}
     </div>
   )
 }
 
 /**
+ * Interface dos props do componente `UtilityLink`.
+ *
+ * @author Alexandre Raminelli
+ */
+interface UtilityLinkProps {
+  /** Objeto link a ser renderizado. */
+  link: NavLinkWithIcon
+}
+/**
  * Botões de ação da loja no header principal.
  *
  * @author Alexandre Raminelli
  */
-function UtilityLink(props: NavLinkWithIcon) {
+function UtilityLink({ link }: UtilityLinkProps) {
   return (
-    <Link href={props.href} role="button">
-      <span className="sr-only">{props.text}</span>
-      <props.icon
+    <Link href={link.href} role="button">
+      <span className="sr-only">{link.text}</span>
+      <link.Icon
         strokeWidth={1.5} // espessura
         className="w-7 h-7 md:w-8 md:h-8 hover:text-color-14" // estilos
       />

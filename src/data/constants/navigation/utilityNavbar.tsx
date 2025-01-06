@@ -7,7 +7,7 @@ import { HeartIcon, ShoppingCart, UserIcon } from "lucide-react" // ícones
  * @author Alexandre Raminelli
  */
 export const utilityNavbar: NavLinkWithIcon[] = [
-  { text: "Favorites", href: "/favorites", icon: HeartIcon },
-  { text: "Cart", href: "/card", icon: ShoppingCart },
-  { text: "Login", href: "/login", icon: UserIcon },
+  { text: "Favorites", href: "/favorites", Icon: HeartIcon },
+  { text: "Cart", href: "/card", Icon: ShoppingCart },
+  { text: "Login", href: "/login", Icon: UserIcon },
 ]
