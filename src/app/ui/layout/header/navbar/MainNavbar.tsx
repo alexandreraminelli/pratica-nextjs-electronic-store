@@ -1,10 +1,10 @@
 "use client"
 
 import { mainNavbar } from "@/data/constants/navigation/mainNavbar" // links do navbar
+import useIsActive from "@/data/hooks/navigation/isActive" // verificar se link está ativo
 import NavLink from "@/data/model/navigation/NavLink"
 import clsx from "clsx" // classes condicionais
 import Link from "next/link"
-import { usePathname } from "next/navigation" // obter caminho da rota atual
 
 /**
  * Interface dos props do componente `MainNavbar`.
@@ -23,9 +23,6 @@ interface MainNavbarProps {
  * @author Alexandre Raminelli
  */
 export default function MainNavbar({ className }: MainNavbarProps) {
-  /** Caminho da rota atual. */
-  const pathname = usePathname()
-
   return (
     <nav className={className}>
       <ul
@@ -36,7 +33,7 @@ export default function MainNavbar({ className }: MainNavbarProps) {
         "
       >
         {mainNavbar.map((link, index) => (
-          <LinkNavbar key={index} link={link} active={pathname === link.href} />
+          <LinkNavbar key={index} link={link} />
         ))}
       </ul>
     </nav>
@@ -51,15 +48,16 @@ export default function MainNavbar({ className }: MainNavbarProps) {
 interface LinkNavbarProps {
   /** Objeto do link a ser renderizado. */
   link: NavLink
-  /** Se o link é da página atual. */
-  active: boolean
 }
 /**
  * Link do navbar principal.
  *
  * @author Alexandre Raminelli
  */
-function LinkNavbar({ link, active }: LinkNavbarProps) {
+function LinkNavbar({ link }: LinkNavbarProps) {
+  /** Se o link está ativo, ou seja, se seu href é da rota atual. */
+  const active = useIsActive(link.href)
+
   return (
     <li>
       <Link
