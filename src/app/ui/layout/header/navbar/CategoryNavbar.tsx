@@ -28,6 +28,7 @@ export default function CategoryNavbar({ className }: CategoryNavbarProps) {
       className={`
       pd-container
       bg-dark-03 text-white font-medium text-nowrap
+      divide-x
       flex flex-row flex-wrap py-2 justify-center items-center
       ${className}
     `}
@@ -62,7 +63,7 @@ function CategoryLink({ link }: CategoryLinkProps) {
       href={link.href} // ro``ta
       // styles:
       className={clsx(
-        `flex flex-row flex-1 
+        `flex flex-row flex-1 justify-center
         gap-2
         transition-opacity`,
         {
