@@ -1,5 +1,5 @@
 import HeaderTop from "./HeaderTop"
-import Subnav from "./Subnav"
+import CategoryNavbar from "./navbar/CategoryNavbar"
 
 /**
  * Cabeçalho do site.
@@ -10,7 +10,7 @@ export default function Header() {
   return (
     <header className="sticky top-0">
       <HeaderTop />
-      <Subnav />
+      <CategoryNavbar className="max-md:hidden" />
     </header>
   )
 }
