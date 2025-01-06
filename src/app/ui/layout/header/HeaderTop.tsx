@@ -1,6 +1,7 @@
 import LogoLink from "@/app/ui/logo/LogoLink"
 import SearchBox from "@/app/ui/navigation/SearchBox"
-import { MenuIcon } from "lucide-react"
+import { MenuIcon } from "lucide-react" // ícones
+import UtilityNavbar from "./navbar/UtilityNavbar"
 import MainNavbar from "./navbar/MainNavbar"
 
 /**
@@ -23,7 +24,8 @@ export default function HeaderTop() {
 
       {/* Desktop */}
       <SearchBox className="max-sm:hidden" />
-      <MainNavbar className="max-md:hidden" />
+      <MainNavbar className="max-lg:hidden" />
+      <UtilityNavbar />
 
       {/* Mobile */}
       <MenuIcon width={40} height={40} className="lg:hidden" />
