@@ -39,8 +39,11 @@ export default function UtilityNavbar({ className }: UtilityNavbarProps) {
 function UtilityLink(props: NavLinkWithIcon) {
   return (
     <Link href={props.href} role="button">
-      {/* <span>props.name</span> */}
-      <props.icon strokeWidth={1.5} className="w-7 h-7 md:w-8 md:h-8 hover:text-color-14" />
+      <span className="sr-only">{props.text}</span>
+      <props.icon
+        strokeWidth={1.5} // espessura
+        className="w-7 h-7 md:w-8 md:h-8 hover:text-color-14" // estilos
+      />
     </Link>
   )
 }

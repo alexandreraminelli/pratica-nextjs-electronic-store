@@ -66,7 +66,7 @@ function LinkNavbar({ link, active }: LinkNavbarProps) {
         href={link.href} // endereço
         // estilos:
         className={clsx(
-          `text-base font-medium
+          `text-base font-medium text-nowrap
           hover:opacity-100 transition-opacity`,
           {
             "opacity-30 hover:opacity-100": !active, // links não ativos

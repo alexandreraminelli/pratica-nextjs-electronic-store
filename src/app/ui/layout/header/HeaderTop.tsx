@@ -18,12 +18,13 @@ export default function HeaderTop() {
         py-6 pd-container
         flex flex-row items-center justify-between
         bg-background
+        md:gap-8
       "
     >
       <LogoLink />
 
       {/* Desktop */}
-      <SearchBox className="max-sm:hidden" />
+      <SearchBox className="max-sm:hidden" inputId="headerSearchBox" />
       <MainNavbar className="max-lg:hidden" />
       <UtilityNavbar />
 

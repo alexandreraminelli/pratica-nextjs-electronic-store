@@ -5,6 +5,8 @@ import { SearchIcon } from "lucide-react" // ícone de lupa
  * @author Alexandre Raminelli
  */
 interface SearchBoxProps {
+  /** ID do input para vinculação com o label. */
+  inputId: string
   /** Texto do placeholder. (opcional) */
   placeholder?: string
   /** Classes CSS personalizadas. (opcional) */
@@ -15,7 +17,7 @@ interface SearchBoxProps {
  * Caixa de pesquisa.
  * @author Alexandre Raminelli
  */
-export default function SearchBox({ placeholder = "Search", className }: SearchBoxProps) {
+export default function SearchBox({ inputId, placeholder = "Search", className }: SearchBoxProps) {
   return (
     <div
       role="searchbox"
@@ -28,20 +30,20 @@ export default function SearchBox({ placeholder = "Search", className }: SearchB
         `}
     >
       {/* Label para SEO e screen readers */}
-      <label htmlFor="search" className="sr-only">
-        Search
+      <label htmlFor={inputId}>
+        <span className="sr-only">Search in store</span>
+        {/* Ícone */}
+        <SearchIcon className="text-color-14" aria-hidden="true" />
       </label>
-      {/* Ícone */}
-      <SearchIcon className="text-color-14" />
       {/* Input */}
       <input
         type="text"
+        id={inputId}
         placeholder={placeholder}
         // Estilos:
         className="
         bg-transparent text-color-17
         text-sm font-medium
-        focus-within:
         "
       />
     </div>
