@@ -1,6 +1,10 @@
-import Link from "next/link"
+"use client"
+
 import { categoryNavbar } from "@/data/constants/navigation/categoryNavbar"
+import clsx from "clsx"
+import useIsActive from "@/data/hooks/navigation/isActive"
 import { NavLinkWithIcon } from "@/data/model/navigation/NavLink"
+import Link from "next/link"
 
 /**
  * Props do componente `CategoryNavbar`.
@@ -50,16 +54,22 @@ interface CategoryLinkProps {
  * @author Alexandre Raminelli
  */
 function CategoryLink({ link }: CategoryLinkProps) {
+  /** Se o link está ativo (se seu href é pra rota atual). */
+  const isActive = useIsActive(link.href)
+
   return (
     <Link
       href={link.href} // ro``ta
       // styles:
-      className={`
-        flex flex-row flex-1
+      className={clsx(
+        `flex flex-row flex-1 
         gap-2
-        opacity-50 hover:opacity-100
-        transition-opacity
-      `}
+        transition-opacity`,
+        {
+          "opacity-50 hover:opacity-100": !isActive, // links não ativos
+          "opacity-100": isActive, // links ativos
+        }
+      )}
     >
       <link.Icon className="h-6 w-6" /> {/* ícone */}
       <span>{link.text}</span> {/* texto */}
