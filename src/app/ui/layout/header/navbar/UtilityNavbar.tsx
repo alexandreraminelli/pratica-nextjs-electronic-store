@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { mainActions } from "@/data/constants/navigation/mainActions"
+import { utilityNavbar } from "@/data/constants/navigation/utilityNavbar"
 import { NavLinkWithIcon } from "@/data/model/navigation/NavLink"
 
 /**
@@ -24,7 +24,7 @@ export default function UtilityNavbar({ className }: UtilityNavbarProps) {
         ${className}
       `}
     >
-      {mainActions.map((link, index) => (
+      {utilityNavbar.map((link, index) => (
         <UtilityLink key={index} icon={link.icon} text={link.text} href={link.href} />
       ))}
     </div>
