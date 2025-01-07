@@ -42,8 +42,10 @@ export default function SearchBox({ inputId, placeholder = "Search", className }
         placeholder={placeholder}
         // Estilos:
         className="
-        bg-transparent text-color-17
-        text-sm font-medium
+        bg-transparent text-foreground 
+        placeholder:opacity-50 placeholder:text-color-17 placeholder:text-sm
+        text-base font-medium
+        outline-none
         "
       />
     </div>
