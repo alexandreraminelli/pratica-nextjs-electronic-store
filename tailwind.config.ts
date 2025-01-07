@@ -21,6 +21,11 @@ export default {
         dark: {
           "03": "var(--dark03)",
         },
+        /** Cores claras que não mudam com o tema. */
+        light: {
+          "14": "var(--light14)",
+          "17": "var(--light17)",
+        },
       },
     },
   },

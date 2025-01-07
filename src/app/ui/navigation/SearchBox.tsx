@@ -34,7 +34,7 @@ export default function SearchBox({ inputId, placeholder = "Search", className }
       <label htmlFor={inputId} className="ps-4">
         <span className="sr-only">Search in store</span>
         {/* Ícone */}
-        <SearchIcon className="text-color-14" aria-hidden="true" />
+        <SearchIcon className="text-light-14" aria-hidden="true" />
       </label>
       {/* Input */}
       <input
@@ -44,7 +44,7 @@ export default function SearchBox({ inputId, placeholder = "Search", className }
         // Estilos:
         className="
         bg-transparent text-foreground 
-        placeholder:opacity-50 placeholder:text-color-17 placeholder:text-sm
+        placeholder:opacity-50 placeholder:text-light-17 placeholder:text-sm
         text-base font-medium
         outline-none
         pe-4
