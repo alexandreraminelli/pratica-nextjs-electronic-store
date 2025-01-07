@@ -27,9 +27,11 @@ export default function CategoryNavbar({ className }: CategoryNavbarProps) {
     <nav
       className={`
       pd-container
-      bg-dark-03 text-white font-medium text-nowrap
+      bg-dark-03 text-white 
+      font-medium text-nowrap 
+      max-md:text-xs max-lg:text-sm
       divide-x
-      flex flex-row flex-wrap py-2 justify-center items-center
+      flex flex-row py-2 justify-center items-center
       ${className}
     `}
     >
@@ -60,11 +62,11 @@ function CategoryLink({ link }: CategoryLinkProps) {
 
   return (
     <Link
-      href={link.href} // ro``ta
+      href={link.href} // rota
       // styles:
       className={clsx(
-        `flex flex-row flex-1 justify-center
-        gap-2
+        `flex flex-row flex-1 justify-center items-center
+        gap-1 lg:gap-2 px-1
         transition-opacity`,
         {
           "opacity-50 hover:opacity-100": !isActive, // links não ativos
@@ -72,8 +74,8 @@ function CategoryLink({ link }: CategoryLinkProps) {
         }
       )}
     >
-      <link.Icon className="h-6 w-6" /> {/* ícone */}
-      <span>{link.text}</span> {/* texto */}
+      <link.Icon className="size-5 lg:size-6 transition-all" /> {/* ícone */}
+      <span className="transition-all">{link.text}</span> {/* texto */}
     </Link>
   )
 }

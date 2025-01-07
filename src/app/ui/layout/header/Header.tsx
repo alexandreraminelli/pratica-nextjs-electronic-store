@@ -10,7 +10,7 @@ export default function Header() {
   return (
     <header className="sticky top-0">
       <HeaderTop />
-      <CategoryNavbar className="max-md:hidden" />
+      <CategoryNavbar className="max-sm:hidden" />
     </header>
   )
 }
