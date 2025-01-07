@@ -26,6 +26,7 @@ export default function SearchBox({ inputId, placeholder = "Search", className }
         flex flex-row
         bg-color-22 rounded-lg
         p-4 gap-2
+        cursor-text
         ${className}
         `}
     >
