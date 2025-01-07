@@ -42,9 +42,21 @@ export default function Footer() {
  */
 function FooterLogo() {
   return (
-    <header>
+    <header
+      className="
+      flex flex-col items-center md:items-start
+      gap-4 md:gap-6"
+    >
       {/* Logo */}
       <LogoLink className="max-w-24 text-white" />
+      {/* Texto */}
+      <p
+        className="
+        text-light-9 text-sm leading-6
+        text-center md:text-start"
+      >
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quasi enim quia distinctio illum officia.
+      </p>
     </header>
   )
 }
