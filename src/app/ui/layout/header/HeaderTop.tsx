@@ -18,7 +18,7 @@ export default function HeaderTop() {
         py-6 pd-container
         flex flex-row items-center justify-between
         bg-background
-        md:gap-8
+        gap-3 md:gap-8
       "
     >
       <LogoLink />
@@ -26,10 +26,12 @@ export default function HeaderTop() {
       {/* Desktop */}
       <SearchBox className="max-sm:hidden" inputId="headerSearchBox" />
       <MainNavbar className="max-lg:hidden" />
-      <UtilityNavbar />
+      <UtilityNavbar className="max-xs:hidden" />
 
       {/* Mobile */}
-      <MenuIcon width={40} height={40} className="lg:hidden" />
+      <div>
+        <MenuIcon className="size-10 lg:hidden" />
+      </div>
     </div>
   )
 }

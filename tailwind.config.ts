@@ -27,6 +27,10 @@ export default {
           "17": "var(--light17)",
         },
       },
+      /** Tamanhos personalizados de tela. */
+      screens: {
+        xs: "328px",
+      },
     },
   },
   plugins: [],

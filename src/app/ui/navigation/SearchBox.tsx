@@ -25,7 +25,7 @@ export default function SearchBox({ inputId, placeholder = "Search", className }
       className={`
         flex flex-row gap-2
         bg-color-22 rounded-lg
-        *:py-4
+        *:py-4 w-full
         cursor-text
         ${className}
         `}
@@ -46,9 +46,8 @@ export default function SearchBox({ inputId, placeholder = "Search", className }
         bg-transparent text-foreground 
         placeholder:opacity-50 placeholder:text-light-17 placeholder:text-sm
         text-base font-medium
-        outline-none
-        pe-4
-        "
+        outline-none w-full
+        pe-4"
       />
     </div>
   )
