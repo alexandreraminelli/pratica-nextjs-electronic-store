@@ -23,15 +23,15 @@ export default function SearchBox({ inputId, placeholder = "Search", className }
       role="searchbox"
       // styles:
       className={`
-        flex flex-row
+        flex flex-row gap-2
         bg-color-22 rounded-lg
-        p-4 gap-2
+        *:py-4
         cursor-text
         ${className}
         `}
     >
       {/* Label para SEO e screen readers */}
-      <label htmlFor={inputId}>
+      <label htmlFor={inputId} className="ps-4">
         <span className="sr-only">Search in store</span>
         {/* Ícone */}
         <SearchIcon className="text-color-14" aria-hidden="true" />
@@ -47,6 +47,7 @@ export default function SearchBox({ inputId, placeholder = "Search", className }
         placeholder:opacity-50 placeholder:text-color-17 placeholder:text-sm
         text-base font-medium
         outline-none
+        pe-4
         "
       />
     </div>
