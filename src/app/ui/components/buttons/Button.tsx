@@ -16,6 +16,9 @@ export interface ButtonProps {
   state?: "fill" | "white-stroke" | "black-stroke"
   /** Tamanho do botão. */
   size?: "normal" | "small"
+
+  /** Classes personalizadas. (opcional) */
+  className?: string
 }
 
 /**
@@ -30,13 +33,18 @@ export default function Button(
     // style:
     state = "fill",
     size = "normal",
+    className,
   }: ButtonProps // props
 ) {
   return (
     <button
       className={clsx(
         // Estilos gerais:
-        "flex flex-row gap-2 items-center justify-center cursor-pointer hover:shadow-md transition-all",
+        `flex flex-row items-center justify-center
+        gap-2
+        cursor-pointer 
+        hover:shadow-md transition-all
+        ${className}`,
         // Estilos Condicionais:
         {
           "text-base rounded-md py-4 px-14": size === "normal", // normal size
