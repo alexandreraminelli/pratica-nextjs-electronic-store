@@ -19,6 +19,9 @@ export interface ButtonProps {
 
   /** Classes personalizadas. (opcional) */
   className?: string
+
+  /** Ação ao clicar no botão. (opcional) */
+  onClick?: React.MouseEventHandler<HTMLButtonElement>
 }
 
 /**
@@ -34,10 +37,12 @@ export default function Button(
     state = "fill",
     size = "normal",
     className,
+    onClick,
   }: ButtonProps // props
 ) {
   return (
     <button
+      onClick={onClick} // ação ao clicar
       className={clsx(
         // Estilos gerais:
         `flex flex-row items-center justify-center
