@@ -1,8 +1,8 @@
 import { inter } from "@/app/ui/fonts/fonts" // fontes
 import Header from "@/app/ui/layout/header/Header"
 import type { Metadata } from "next" // formato dos metadados
-import "./globals.css"
-import Footer from "./ui/layout/footer/Footer"
+import "@/app/globals.css"
+import Footer from "@/app/ui/layout/footer/Footer"
 
 /**
  * Metadados principais do site.
