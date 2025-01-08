@@ -11,7 +11,7 @@ export default function Footer() {
   return (
     <footer
       className="
-      flex flex-col items-center
+      flex flex-col
       gap-8 md:gap-6
       bg-dark-27 lg:bg-black
       text-light-9
@@ -20,7 +20,7 @@ export default function Footer() {
     >
       <div
         className="
-        flex flex-col items-center md:flex-row md:justify-between
+        flex flex-col md:flex-row items-center md:items-start  md:justify-between
         gap-8
         w-full
         "
