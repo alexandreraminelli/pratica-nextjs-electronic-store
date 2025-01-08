@@ -1,4 +1,5 @@
 import LogoLink from "@/app/ui/logo/LogoLink"
+import FooterNavigation from "./components/FooterNavigation"
 
 /**
  * Rodapé do site.
@@ -26,7 +27,7 @@ export default function Footer() {
         {/* Logo */}
         <FooterLogo />
         {/* Footer Nav */}
-        <nav>Footer Navigation</nav>
+        <FooterNavigation />
       </div>
 
       {/* Social Networks */}
@@ -45,7 +46,8 @@ function FooterLogo() {
     <header
       className="
       flex flex-col items-center md:items-start
-      gap-4 md:gap-6"
+      gap-4 md:gap-6
+      w-fit"
     >
       {/* Logo */}
       <LogoLink className="max-w-24 text-white" />
