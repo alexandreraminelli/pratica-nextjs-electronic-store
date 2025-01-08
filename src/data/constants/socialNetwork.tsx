@@ -1,4 +1,4 @@
-import SocialNetworkList, { SocialNetworkWithIcon } from "@/data/model/socialNetwork"
+import SocialNetworkList, { SocialNetworkWithIcon } from "@/data/model/SocialNetwork"
 import { siFacebook, siInstagram, SimpleIcon, siTiktok, siX } from "simple-icons"
 
 /**

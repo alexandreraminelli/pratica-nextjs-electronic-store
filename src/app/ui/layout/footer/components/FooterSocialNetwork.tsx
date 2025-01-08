@@ -1,5 +1,5 @@
 import { socialNetworkWithIcon } from "@/data/constants/socialNetwork" // lista das redes sociais
-import { SocialNetworkWithIcon } from "@/data/model/socialNetwork"
+import { SocialNetworkWithIcon } from "@/data/model/SocialNetwork"
 import Link from "next/link"
 
 /**
