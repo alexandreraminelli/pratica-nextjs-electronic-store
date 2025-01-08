@@ -6,7 +6,7 @@ import { LucideIcon } from "lucide-react"
  *
  * @author Alexandre Raminelli
  */
-interface ButtonProps {
+export interface ButtonProps {
   /** Texto do botão. */
   text: string
   /** Ícone exibido no botão. (opcional) */
@@ -37,7 +37,7 @@ export default function Button(
       className={clsx(
         // Estilos gerais:
         "flex flex-row gap-2 items-center justify-center cursor-pointer hover:shadow-md transition-all",
-        // Condicionais:
+        // Estilos Condicionais:
         {
           "text-base rounded-md py-4 px-14": size === "normal", // normal size
           "text-sm rounded-lg py-3 px-16": size === "small", // small size
