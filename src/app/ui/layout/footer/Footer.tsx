@@ -1,5 +1,6 @@
 import LogoLink from "@/app/ui/logo/LogoLink"
 import FooterNavigation from "./components/FooterNavigation"
+import FooterSocialNetwork from "./components/FooterSocialNetwork"
 
 /**
  * Rodapé do site.
@@ -31,7 +32,7 @@ export default function Footer() {
       </div>
 
       {/* Social Networks */}
-      <div>Social Networks</div>
+      <FooterSocialNetwork />
     </footer>
   )
 }
