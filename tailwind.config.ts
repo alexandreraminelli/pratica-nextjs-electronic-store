@@ -12,17 +12,21 @@ export default {
 
         /** Cores do style guide. */
         color: {
-          "03": "var(--color03)",
+          "3": "var(--color03)",
+          "9": "var(--color09)",
           "14": "var(--color14)",
           "17": "var(--color17)",
           "22": "var(--color22)",
+          "27": "var(--color27)",
         },
         /** Cores escuras que não mudam com o tema. */
         dark: {
-          "03": "var(--dark03)",
+          "3": "var(--dark03)",
+          "27": "var(--dark27)",
         },
         /** Cores claras que não mudam com o tema. */
         light: {
+          "9": "var(--light09)",
           "14": "var(--light14)",
           "17": "var(--light17)",
         },

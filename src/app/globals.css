@@ -9,14 +9,18 @@
 
   /* Cores que não mudam de acordo com o tema */
   --dark03: #2e2e2e;
+  --light09: #cfcfcf;
   --light14: #989898;
   --light17: #656565;
+  --dark27: #181313;
 
   /* Cores que mudam com o tema */
-  --color3: var(--dark03);
+  --color03: var(--dark03);
+  --color09: var(--light09);
   --color14: var(--light14);
   --color17: var(--light17);
   --color22: #f5f5f5;
+  --color27: var(--dark27);
 }
 
 /* Tema escuro */

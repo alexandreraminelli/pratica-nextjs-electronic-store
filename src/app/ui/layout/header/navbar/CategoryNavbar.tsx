@@ -27,7 +27,7 @@ export default function CategoryNavbar({ className }: CategoryNavbarProps) {
     <nav
       className={`
       pd-container
-      bg-dark-03 text-white 
+      bg-dark-3 text-white 
       font-medium text-nowrap 
       max-md:text-xs max-lg:text-sm
       divide-x
