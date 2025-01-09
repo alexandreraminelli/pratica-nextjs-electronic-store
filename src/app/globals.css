@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Tema claro (padrão) */
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -53,13 +52,44 @@
   --light36: #ededed;
   --light37: #f4f4f4;
 
-  /* Cores que mudam com o tema */
+  /* Cores que mudam com o tema. (padrão: light mode)*/
+  --color01: var(--dark01);
+  --color02: var(--light02);
   --color03: var(--dark03);
+  --color04: var(--light04);
+  --color05: var(--dark05);
+  --color06: var(--light06);
+  --color07: var(--light07);
+  --color08: var(--light08);
   --color09: var(--light09);
+  --color10: var(--dark10);
+  --color11: var(--light11);
+  --color12: var(--dark12);
+  --color13: var(--light13);
   --color14: var(--light14);
+  --color15: var(--light15);
+  --color16: var(--light16);
   --color17: var(--light17);
+  --color18: var(--light18);
+  --color19: var(--light19);
+  --color20: var(--light20);
+  --color21: var(--light21);
   --color22: var(--light22);
+  --color23: var(--light23);
+  --color24: var(--light24);
+  --color25: var(--light25);
+  --color26: var(--light26);
   --color27: var(--dark27);
+  --color28: var(--dark28);
+  --color29: var(--light29);
+  --color30: var(--light30);
+  --color31: var(--light31);
+  --color32: var(--light32);
+  --color33: var(--light33);
+  --color34: var(--light34);
+  --color35: var(--light35);
+  --color36: var(--light36);
+  --color37: var(--light37);
 }
 
 /* Tema escuro */
