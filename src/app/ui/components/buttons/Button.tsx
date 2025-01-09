@@ -57,8 +57,8 @@ export default function Button(
 
           "bg-black text-white hover:bg-zinc-700": state === "fill", // fill
           border: state === "white-stroke" || state === "black-stroke", // stroke
-          "border-white text-white hover:bg-zinc-500": state === "white-stroke", // white stroke
-          "border-black text-black hover:bg-zinc-600 hover:text-white": state === "black-stroke", // black stroke
+          "border-white text-white hover:bg-white/15": state === "white-stroke", // white stroke
+          "border-black text-black hover:bg-black/40 hover:text-white": state === "black-stroke", // black stroke
         }
       )}
     >
