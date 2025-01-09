@@ -10,14 +10,17 @@ const { product, slogan, description, image, imageDesktop, link } = mainBanner
  * @author Alexandre Raminelli
  */
 export default function MainBanner() {
+  /** Texto alternativos da imagem. */
+  const altTextImg: string = `Photo of a ${product}.`
+
   return (
     <section
       className="
-      flex flex-col items-center md:flex-row
+      flex flex-col items-center md:flex-row md:justify-between
       bg-raisinblack
       pd-container pt-22 md:pt-0
-      gap-12
-      "
+      gap-12"
+      role="banner"
     >
       {/* Content */}
       <div className="flex flex-col items-center md:items-start gap-8">
@@ -38,7 +41,7 @@ export default function MainBanner() {
         {/* Imagem mobile */}
         <Image
           src={image}
-          alt="Imagem de um IPhone 14 Pro"
+          alt={altTextImg}
           // sizes:
           width={321}
           height={289}
@@ -49,7 +52,7 @@ export default function MainBanner() {
         {imageDesktop && (
           <Image
             src={imageDesktop}
-            alt="Imagem de um IPhone 14 Pro"
+            alt={altTextImg}
             // sizes:
             width={406}
             height={632}
