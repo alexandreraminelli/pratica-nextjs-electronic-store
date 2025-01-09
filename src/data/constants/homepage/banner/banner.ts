@@ -27,6 +27,7 @@ export const otherBanners: BannerModel[] = [
     product: "Apple AirPods Max",
     description: "Computational audio. Listen, it's powerful",
     image: `${bannerImgRoute}/airpods.png`,
+    imageMobSize: { w: 192, h: 200 },
     imageDesktop: `${bannerImgRoute}/airpods-clip.png`,
     link: "/headphones",
   },
