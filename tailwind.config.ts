@@ -130,6 +130,10 @@ export default {
       screens: {
         xs: "328px",
       },
+      /** Espaçamentos personalizados. */
+      spacing: {
+        "22": "88px",
+      },
     },
   },
   plugins: [],
