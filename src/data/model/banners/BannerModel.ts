@@ -16,6 +16,9 @@ export default interface BannerModel {
   /** Imagem para desktop. (opcional) */
   imageDesktop?: string
 
+  /** Se deve exibir um botão de "Shop Now". */
+  button?: boolean
+
   /** Link pra página do produto. */
   link: string
 }
