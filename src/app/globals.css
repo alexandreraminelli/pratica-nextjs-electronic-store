@@ -14,19 +14,51 @@
   --orange-light: #f9a000;
   --orange: #ff5e00;
 
-  /* Cores que não mudam de acordo com o tema */
+  /* Cores monocromáticas que não mudam de acordo com o tema */
+  --dark01: #4e4e4e;
+  --light02: #e4e4e4;
   --dark03: #2e2e2e;
+  --light04: #f6f6f6;
+  --dark05: #222222;
+  --light06: #979797;
+  --light07: #a2a3b1;
+  --light08: #9f9f9f;
   --light09: #cfcfcf;
+  --dark10: #191919;
+  --light11: #797979;
+  --dark12: #545454;
+  --light13: #737373;
   --light14: #989898;
-  --light17: #656565;
+  --light15: #a7a7a7;
+  --light16: #f6f6f6;
+  --dark17: #656565;
+  --light18: #909090;
+  --light19: #d1d1d8;
+  --light20: #d5d5d5;
+  --light21: #d9d9d9;
+  --light22: #f5f5f5;
+  --light23: #a4a4a4;
+  --light24: #b5b5b5;
+  --light25: #cecece;
+  --light26: #fafafa;
   --dark27: #181313;
+  --dark28: #414141;
+  --light29: #6f6f6f;
+  --light30: #7e7e7e;
+  --light31: #929292;
+  --light32: #aeaeae;
+  --light33: #d3d3d3;
+  --light34: #d4d4d4;
+  --light35: #e7e7e7;
+  --light36: #ededed;
+  --light37: #f4f4f4;
 
   /* Cores que mudam com o tema */
   --color03: var(--dark03);
   --color09: var(--light09);
   --color14: var(--light14);
   --color17: var(--light17);
-  --color22: #f5f5f5;
+  --color22: var(--light22);
   --color27: var(--dark27);
 }
 
