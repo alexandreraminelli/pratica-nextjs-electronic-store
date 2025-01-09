@@ -10,7 +10,18 @@ export default {
         /** Cor que fornece contraste ao background. */
         foreground: "var(--foreground)",
 
-        /** Cores do style guide. */
+        // Cores de destaque
+        red: {
+          "01": "var(--red1)",
+          "02": "var(--red2)",
+        },
+        purple: "var(--purple)",
+        orange: {
+          normal: "var(--orange)",
+          light: "var(--orange-light)",
+        },
+
+        /** Cores monocromáticas que variam com o tema. */
         color: {
           "3": "var(--color03)",
           "9": "var(--color09)",
