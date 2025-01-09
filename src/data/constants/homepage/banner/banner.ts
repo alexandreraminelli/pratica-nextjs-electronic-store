@@ -31,6 +31,13 @@ export const otherBanners: BannerModel[] = [
     link: "/headphones",
   },
   {
+    product: "Apple Vision Pro",
+    description: "An immersive way to experience entertainment",
+    image: `${bannerImgRoute}/visionpro.png`,
+    imageDesktop: `${bannerImgRoute}/visionpro-clip.png`,
+    link: "/headphones",
+  },
+  {
     product: "Playstation 5",
     description: "Incredibly powerful CPUs, GPUs, and an SSD with integrated I/O will redefine your PlayStation experience.",
     image: `${bannerImgRoute}/ps5.png`,
