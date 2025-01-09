@@ -19,19 +19,19 @@ export default function MainBanner() {
       gap-12
       "
     >
-      {/* Texto */}
+      {/* Content */}
       <div
-        className="
-        flex flex-col items-center
-        text-center
-        gap-4"
+        className="flex flex-col items-center gap-8
+        text-center"
       >
-        {/* Slogan */}
-        <p className="text-white/40 font-semibold text-2xl">{slogan}</p>
-        {/* Título */}
-        <h3 className="text-white font-thin text-7xl">{product}</h3>
-        {/* Descrição */}
-        <p className="text-lg font-medium text-light-18">{description}</p>
+        <div className="flex flex-col gap-4">
+          {/* Slogan */}
+          <p className="text-white/40 font-semibold text-2xl">{slogan}</p>
+          {/* Título */}
+          <h3 className="text-white font-thin text-7xl">{product}</h3>
+          {/* Descrição */}
+          <p className="text-lg font-medium text-light-18">{description}</p>
+        </div>
 
         {/* Botão */}
         <ButtonLink href={link} text="Shop Now" state="white-stroke" />
