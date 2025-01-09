@@ -13,5 +13,6 @@ export const mainBanner: BannerModel = {
   description: "Created to change everything for the better. For everyone",
   slogan: "Pro.Beyond.",
   image: `${bannerImgRoute}iphone.png`,
+  imageDesktop: `${bannerImgRoute}iphone-lg.png`,
   link: "/smartphones", // link de teste
 }

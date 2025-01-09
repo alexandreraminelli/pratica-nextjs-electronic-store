@@ -2,7 +2,7 @@ import { mainBanner } from "@/data/constants/homepage/banner/banner" // dados do
 import Image from "next/image"
 import ButtonLink from "@/app/ui/components/buttons/ButtonLink"
 
-const { product, slogan, description, image, link } = mainBanner
+const { product, slogan, description, image, imageDesktop, link } = mainBanner
 
 /**
  * Banner principal da página inicial.
@@ -43,8 +43,20 @@ export default function MainBanner() {
           width={321}
           height={289}
           // styles:
-          className="w-full"
+          className={`w-full ${imageDesktop && "md:hidden"}`}
         />
+        {/* Imagem desktop */}
+        {imageDesktop && (
+          <Image
+            src={imageDesktop}
+            alt="Imagem de um IPhone 14 Pro"
+            // sizes:
+            width={406}
+            height={632}
+            // styles:
+            className="h-full max-md:hidden"
+          />
+        )}
       </figure>
     </section>
   )

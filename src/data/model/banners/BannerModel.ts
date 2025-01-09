@@ -10,8 +10,11 @@ export default interface BannerModel {
   description: string
   /** Slogan do produto. */
   slogan?: string
+
   /** Imagem do produto. */
   image: string
+  /** Imagem para desktop. (opcional) */
+  imageDesktop?: string
 
   /** Link pra página do produto. */
   link: string
