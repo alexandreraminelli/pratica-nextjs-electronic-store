@@ -36,7 +36,7 @@ interface BannerProps {
 function Banner(
   { banner }: BannerProps // props
 ) {
-  const { product, description, button, link, image, imageMobSize = { w: 200, h: 200 }, imageDesktop, imageDeskSize = { w: 200, h: 200 }, style } = banner
+  const { product, description, button, link, image, imageMobSize = { w: 200, h: 200 }, imageDesktop, imageDeskSize = { w: 344, h: 344 }, style } = banner
   /** Texto alternativo da imagem. */
   const altTextImg: string = `Photo of a ${product}.`
 
