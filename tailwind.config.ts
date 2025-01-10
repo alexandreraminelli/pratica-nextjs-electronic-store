@@ -20,6 +20,7 @@ export default {
           normal: "var(--orange)",
           light: "var(--orange-light)",
         },
+        raisinblack: "var(--raisin-black)",
 
         /** Cores monocromáticas que variam com o tema. */
         color: {
@@ -60,6 +61,16 @@ export default {
           "35": "var(--color35)",
           "36": "var(--color36)",
           "37": "var(--color37)",
+          "38": "var(--color38)",
+          "39": "var(--color39)",
+          "40": "var(--color40)",
+          "41": "var(--color41)",
+          "42": "var(--color42)",
+          "43": "var(--color43)",
+          "44": "var(--color44)",
+          "45": "var(--color45)",
+          "46": "var(--color46)",
+          "47": "var(--color47)",
         },
         /** Cores escuras que não mudam com o tema. */
         dark: {
@@ -71,6 +82,14 @@ export default {
           "17": "var(--dark17)",
           "27": "var(--dark27)",
           "28": "var(--dark28)",
+          "38": "var(--dark38)",
+          "40": "var(--dark40)",
+          "41": "var(--dark41)",
+          "42": "var(--dark42)",
+          "43": "var(--dark43)",
+          "44": "var(--dark44)",
+          "45": "var(--dark45)",
+          "46": "var(--dark46)",
         },
         /** Cores claras que não mudam com o tema. */
         light: {
@@ -103,11 +122,17 @@ export default {
           "35": "var(--light35)",
           "36": "var(--light36)",
           "37": "var(--light37)",
+          "39": "var(--light39)",
+          "47": "var(--light47)",
         },
       },
       /** Tamanhos personalizados de tela. */
       screens: {
         xs: "328px",
+      },
+      /** Espaçamentos personalizados. */
+      spacing: {
+        "22": "88px",
       },
     },
   },

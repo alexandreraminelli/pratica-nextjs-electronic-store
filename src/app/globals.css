@@ -12,6 +12,8 @@
   --purple: #9747ff;
   --orange-light: #f9a000;
   --orange: #ff5e00;
+  --blue-dark: #17183b;
+  --raisin-black: #211c24;
 
   /* Cores monocromáticas que não mudam de acordo com o tema */
   --dark01: #4e4e4e;
@@ -51,6 +53,16 @@
   --light35: #e7e7e7;
   --light36: #ededed;
   --light37: #f4f4f4;
+  --dark38: #383838;
+  --light39: #d2d2da;
+  --dark40: #0a0b0d;
+  --dark41: #0f0f0f;
+  --dark42: #151515;
+  --dark43: #353535;
+  --dark44: #16181e;
+  --dark45: #1f2531;
+  --dark46: #201f24;
+  --light47: #7d7d7f;
 
   /* Cores que mudam com o tema. (padrão: light mode)*/
   --color01: var(--dark01);
@@ -90,6 +102,16 @@
   --color35: var(--light35);
   --color36: var(--light36);
   --color37: var(--light37);
+  --color38: var(--dark38);
+  --color39: var(--light39);
+  --color40: var(--dark40);
+  --color41: var(--dark41);
+  --color42: var(--dark42);
+  --color43: var(--dark43);
+  --color44: var(--dark44);
+  --color45: var(--dark45);
+  --color46: var(--dark46);
+  --color47: var(--light47);
 }
 
 /* Tema escuro */
@@ -115,12 +137,19 @@ body {
   --container: 91vw;
   --pd-container: calc((100vw - var(--container)) / 2);
 }
-.pd-container {
-  padding-inline: var(--pd-container);
-}
 /* Container desktop */
 @media screen and (min-width: 1230px) {
   :root {
     --container: 1120px;
+  }
+}
+/* Classe container */
+.pd-container {
+  padding-inline: var(--pd-container);
+}
+/* Container até md */
+@media not all and (min-width: 768px) {
+  .max-md-pd-container {
+    padding-inline: var(--pd-container);
   }
 }
