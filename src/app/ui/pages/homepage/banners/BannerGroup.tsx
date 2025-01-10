@@ -11,7 +11,7 @@ import clsx from "clsx"
  */
 export default function BannerGroup() {
   return (
-    <div>
+    <div className="md:grid grid-cols-2">
       {otherBanners.map((banner, index) => (
         <Banner key={index} banner={banner} />
       ))}
