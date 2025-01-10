@@ -1,6 +1,6 @@
 import ButtonLink from "@/app/ui/components/buttons/ButtonLink"
 import { otherBanners } from "@/data/constants/homepage/banner/banner" // dados dos banners
-import BannerModel from "@/data/model/banners/BannerModel"
+import ProductBannerModel from "@/data/model/banners/ProductBannerModel"
 import clsx from "clsx"
 import Image from "next/image"
 
@@ -26,7 +26,7 @@ export default function BannerGroup() {
  */
 interface BannerProps {
   /** Objeto com as informações do banner. */
-  banner: BannerModel
+  banner: ProductBannerModel
 }
 /**
  * Banner da tela inicial.

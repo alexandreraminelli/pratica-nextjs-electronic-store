@@ -1,9 +1,9 @@
 /**
- * Modelo de conteúdo do banner.
+ * Modelo de conteúdo do banner de produtos.
  *
  * @author Alexandre Raminelli
  */
-export default interface BannerModel {
+export default interface ProductBannerModel {
   /** Produto exibido no banner. */
   product: string
   /** Breve descrição. */

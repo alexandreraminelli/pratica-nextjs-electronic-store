@@ -1,14 +1,15 @@
-import BannerModel from "@/data/model/banners/BannerModel"
+import ProductBannerModel from "@/data/model/banners/ProductBannerModel"
 
 // Caminhos das imagens
 const bannerImgRoute = "/pages/home/banners"
 
 /**
  * Conteúdo do banner principal.
+ * Destaca um produto na tela inicial do site.
  *
  * @author Alexandre Raminelli
  */
-export const mainBanner: BannerModel = {
+export const mainBanner: ProductBannerModel = {
   product: "IPhone 14 Pro",
   description: "Created to change everything for the better. For everyone",
   slogan: "Pro.Beyond.",
@@ -18,11 +19,12 @@ export const mainBanner: BannerModel = {
 }
 
 /**
- * Conteúdo dos demais banners da tela inicial.
+ * Conteúdo dos demais banners de produtos da tela inicial.
+ * Exibidos logo abaixo do banner de produto principal.
  *
  * @author Alexandre Raminelli
  */
-export const otherBanners: BannerModel[] = [
+export const otherBanners: ProductBannerModel[] = [
   {
     product: "Apple AirPods Max",
     description: "Computational audio. Listen, it's powerful",
