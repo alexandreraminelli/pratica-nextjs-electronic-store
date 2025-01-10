@@ -43,25 +43,26 @@ function Banner(
   return (
     <section
       className={clsx(
-        "flex flex-col-reverse items-center max-md-pd-container gap-6 py-10 text-center lg:justify-between", // estilos gerais
+        "flex flex-col-reverse items-center max-md-pd-container gap-6 max-lg:py-10 text-center lg:justify-between", // estilos gerais
         {
           "bg-color-36 lg:col-span-1 lg:row-span-1 lg:col-start-1 lg:row-start-2 lg:col-end-2 lg:row-end-3": style === 1, // 1
           "bg-dark-43 lg:col-spa1 lg:row-span-1 lg:col-start-2 lg:row-start-2 lg:col-end-3 lg:row-end-3": style === 2, // 2
           "bg-background lg:col-span-2 lg:row-span-1 lg:col-start-1 lg:row-start-1 lg:col-end-3 lg:row-end-2": style === 3, // 3
-          "bg-color-36 lg:flex-row lg:col-span-2 lg:row-span-2 lg:col-start-3 lg:row-start-1 lg:col-end-5 lg:row-end-3": style === 4, // 4
+          "bg-color-36 lg:flex-row lg:col-span-2 lg:row-span-2 lg:col-start-3 lg:row-start-1 lg:col-end-5 lg:row-end-3 lg:ps-14": style === 4, // 4
 
-          "lg:flex-row-reverse": style !== 4, // exceto 4
+          "lg:flex-row-reverse lg:pe-12": style !== 4, // exceto 4
         }
       )}
     >
       {/* Content */}
-      <div className="flex flex-col items-center gap-4">
+      <div className="flex flex-col items-center lg:items-start text-center lg:text-start gap-4">
         {/* Texto */}
         {/* Título */}
         <h3
           className={clsx("font-light text-4xl", {
             "text-white": style === 2,
             "text-foreground": style !== 2,
+            "text-6xl": style === 4,
           })}
         >
           {product}
@@ -94,7 +95,7 @@ function Banner(
             width={imageDeskSize.w}
             height={imageDeskSize.h}
             // styles
-            className="max-lg:hidden"
+            className="max-lg:hidden h-full"
           />
         )}
       </figure>
