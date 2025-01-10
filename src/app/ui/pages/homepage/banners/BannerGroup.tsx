@@ -1,8 +1,8 @@
 import ButtonLink from "@/app/ui/components/buttons/ButtonLink"
 import { otherBanners } from "@/data/constants/homepage/banner/banner" // dados dos banners
 import BannerModel from "@/data/model/banners/BannerModel"
-import Image from "next/image"
 import clsx from "clsx"
+import Image from "next/image"
 
 /**
  * Grupo de banners da tela inicial.
@@ -11,7 +11,7 @@ import clsx from "clsx"
  */
 export default function BannerGroup() {
   return (
-    <div className="md:grid grid-cols-2">
+    <div className="md:grid md:grid-cols-2 lg:grid-cols-4 lg:grid-rows-2">
       {otherBanners.map((banner, index) => (
         <Banner key={index} banner={banner} />
       ))}
@@ -45,9 +45,12 @@ function Banner(
       className={clsx(
         "flex flex-col-reverse items-center max-md-pd-container gap-6 py-10 text-center lg:justify-between", // estilos gerais
         {
-          "bg-color-36": style === 1 || style === 4, // 1º e 4º banner
-          "bg-dark-43": style === 2, // 2º banner
-          "bg-background": style === 3, // 3º banner
+          "bg-color-36 lg:col-span-1 lg:row-span-1 lg:col-start-1 lg:row-start-2 lg:col-end-2 lg:row-end-3": style === 1, // 1
+          "bg-dark-43 lg:col-spa1 lg:row-span-1 lg:col-start-2 lg:row-start-2 lg:col-end-3 lg:row-end-3": style === 2, // 2
+          "bg-background lg:col-span-2 lg:row-span-1 lg:col-start-1 lg:row-start-1 lg:col-end-3 lg:row-end-2": style === 3, // 3
+          "bg-color-36 lg:flex-row lg:col-span-2 lg:row-span-2 lg:col-start-3 lg:row-start-1 lg:col-end-5 lg:row-end-3": style === 4, // 4
+
+          "lg:flex-row-reverse": style !== 4, // exceto 4
         }
       )}
     >
