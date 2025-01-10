@@ -1,4 +1,5 @@
 import ProductBannerModel from "@/data/model/banners/ProductBannerModel"
+import CTABannerModel from "@/data/model/banners/CTABannerModel"
 
 // Caminhos das imagens
 const bannerImgRoute = "/pages/home/banners"
@@ -67,3 +68,17 @@ export const otherBanners: ProductBannerModel[] = [
     style: 4,
   },
 ]
+
+/**
+ * Banner CTA de Big Summer Sale.
+ *
+ * @author Alexandre Raminelli
+ */
+export const bigSummerSaleBanner: CTABannerModel = {
+  title: {
+    normal: "Big Summer",
+    bolder: "Sale",
+  },
+  subtitle: "Commodo fames vitae vitae leo mauris in. Eu consequat.",
+  href: "/",
+}
