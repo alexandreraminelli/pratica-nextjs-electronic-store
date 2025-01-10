@@ -13,7 +13,7 @@ export interface ButtonProps {
   Icon?: LucideIcon
 
   /** Estilo do botão. */
-  state?: "fill" | "white-stroke" | "black-stroke"
+  state?: "fill" | "stroke" | "white-stroke" | "black-stroke"
   /** Tamanho do botão. */
   size?: "normal" | "small"
 
@@ -56,7 +56,8 @@ export default function Button(
           "text-sm rounded-lg py-3 px-16": size === "small", // small size
 
           "bg-black text-white hover:bg-zinc-700": state === "fill", // fill
-          border: state === "white-stroke" || state === "black-stroke", // stroke
+          border: state === "stroke" || state === "white-stroke" || state === "black-stroke", // strokes
+          "border-foreground text-foreground hover:bg-zinc-500/40": state === "stroke",
           "border-white text-white hover:bg-white/15": state === "white-stroke", // white stroke
           "border-black text-black hover:bg-black/40 hover:text-white": state === "black-stroke", // black stroke
         }
