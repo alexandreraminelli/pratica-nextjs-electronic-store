@@ -137,12 +137,19 @@ body {
   --container: 91vw;
   --pd-container: calc((100vw - var(--container)) / 2);
 }
-.pd-container {
-  padding-inline: var(--pd-container);
-}
 /* Container desktop */
 @media screen and (min-width: 1230px) {
   :root {
     --container: 1120px;
+  }
+}
+/* Classe container */
+.pd-container {
+  padding-inline: var(--pd-container);
+}
+/* Container até md */
+@media not all and (min-width: 768px) {
+  .max-md-pd-container {
+    padding-inline: var(--pd-container);
   }
 }

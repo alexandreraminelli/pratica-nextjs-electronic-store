@@ -43,7 +43,7 @@ function Banner(
   return (
     <section
       className={clsx(
-        "flex flex-col-reverse items-center pd-container gap-6 py-10 text-center", // estilos gerais
+        "flex flex-col-reverse items-center max-md-pd-container gap-6 py-10 text-center lg:justify-between", // estilos gerais
         {
           "bg-color-36": style === 1 || style === 4, // 1º e 4º banner
           "bg-dark-43": style === 2, // 2º banner
