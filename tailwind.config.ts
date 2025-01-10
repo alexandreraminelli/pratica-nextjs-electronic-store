@@ -71,6 +71,7 @@ export default {
           "45": "var(--color45)",
           "46": "var(--color46)",
           "47": "var(--color47)",
+          "48": "var(--color48)",
         },
         /** Cores escuras que não mudam com o tema. */
         dark: {
@@ -124,6 +125,7 @@ export default {
           "37": "var(--light37)",
           "39": "var(--light39)",
           "47": "var(--light47)",
+          "48": "var(--light48)",
         },
       },
       /** Tamanhos personalizados de tela. */

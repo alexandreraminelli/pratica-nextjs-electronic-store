@@ -63,6 +63,7 @@
   --dark45: #1f2531;
   --dark46: #201f24;
   --light47: #7d7d7f;
+  --light48: #787878;
 
   /* Cores que mudam com o tema. (padrão: light mode)*/
   --color01: var(--dark01);
@@ -112,6 +113,7 @@
   --color45: var(--dark45);
   --color46: var(--dark46);
   --color47: var(--light47);
+  --color48: var(--light48);
 }
 
 /* Tema escuro */
