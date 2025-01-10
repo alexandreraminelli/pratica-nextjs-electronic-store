@@ -5,14 +5,12 @@
  */
 export default interface CTABannerModel {
   /** Título de CTA. */
-  title:
-    | string
-    | {
-        /** Parte normal do título. */
-        normal: string
-        /** Parte em negrito do título. */
-        bolder: string
-      }
+  title: {
+    /** Parte normal do título. */
+    normal: string
+    /** Parte em negrito do título. */
+    bolder: string
+  }
   /** Subtítulo do CTA. */
   subtitle: string
 
