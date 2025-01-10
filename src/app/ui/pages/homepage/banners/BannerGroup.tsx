@@ -55,20 +55,22 @@ function Banner(
       )}
     >
       {/* Content */}
-      <div className="flex flex-col items-center lg:items-start text-center lg:text-start gap-4">
+      <div className="flex flex-col items-center lg:items-start text-center lg:text-start gap-4 lg:py-2">
         {/* Texto */}
         {/* Título */}
         <h3
           className={clsx("font-light text-4xl", {
+            "lg:text-3xl": style === 1 || style === 2,
             "text-white": style === 2,
             "text-foreground": style !== 2,
-            "text-6xl": style === 4,
+            "lg:text-5xl": style === 3,
+            "lg:text-6xl": style === 4,
           })}
         >
           {product}
         </h3>
         {/* Descrição */}
-        <p className="font-medium text-base text-color-18">{description}</p>
+        <p className="font-medium text-base lg:text-sm text-color-18">{description}</p>
 
         {/* Botão */}
         {button && <ButtonLink text="Shop Now" href={link} state="stroke" />}
