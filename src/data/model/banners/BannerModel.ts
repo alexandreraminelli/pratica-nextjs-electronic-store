@@ -23,6 +23,9 @@ export default interface BannerModel {
   /** Se deve exibir um botão de "Shop Now". */
   button?: boolean
 
+  /** Estilo do banner. */
+  style?: number
+
   /** Link pra página do produto. */
   link: string
 }
