@@ -141,6 +141,11 @@ export default {
       lineHeight: {
         "11": "48px",
       },
+      /** Imagens de background. */
+      backgroundImage: {
+        "bigSummerSale-mobile": "url('/banners/big-summer-sale/big-summer-sale-mobile.png')",
+        "bigSummerSale-desktop": "url('/banners/big-summer-sale/big-summer-sale-desktop.png')",
+      },
     },
   },
   plugins: [],

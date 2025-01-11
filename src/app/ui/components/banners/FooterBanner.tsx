@@ -11,10 +11,15 @@ const { title, subtitle, href } = bigSummerSaleBanner
  */
 export default function FooterBanner() {
   return (
-    <aside className="flex flex-col items-center text-center py-26 gap-10 pd-container">
+    <aside
+      className="flex flex-col justify-center items-center text-center py-26 gap-10 pd-container
+      max-md:bg-bigSummerSale-mobile md:bg-bigSummerSale-desktop
+      bg-no-repeat bg-cover bg-center 
+      max-md:aspect-[375/512] md:aspect[45/14]"
+    >
       <div className="flex flex-col gap-3">
         {/* Título */}
-        <h2 className="font-thin text-5xl leading-11">
+        <h2 className="text-white font-thin text-5xl leading-11">
           {title.normal} <strong className="font-medium">{title.bolder}</strong>
         </h2>
 
