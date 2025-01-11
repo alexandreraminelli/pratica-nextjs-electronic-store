@@ -71,6 +71,7 @@ export default {
           "45": "var(--color45)",
           "46": "var(--color46)",
           "47": "var(--color47)",
+          "48": "var(--color48)",
         },
         /** Cores escuras que não mudam com o tema. */
         dark: {
@@ -124,6 +125,7 @@ export default {
           "37": "var(--light37)",
           "39": "var(--light39)",
           "47": "var(--light47)",
+          "48": "var(--light48)",
         },
       },
       /** Tamanhos personalizados de tela. */
@@ -133,6 +135,16 @@ export default {
       /** Espaçamentos personalizados. */
       spacing: {
         "22": "88px",
+        "26": "104px",
+      },
+      /** Altura da linha. */
+      lineHeight: {
+        "11": "48px",
+      },
+      /** Imagens de background. */
+      backgroundImage: {
+        "bigSummerSale-mobile": "url('/banners/big-summer-sale/big-summer-sale-mobile.png')",
+        "bigSummerSale-desktop": "url('/banners/big-summer-sale/big-summer-sale-desktop.png')",
       },
     },
   },

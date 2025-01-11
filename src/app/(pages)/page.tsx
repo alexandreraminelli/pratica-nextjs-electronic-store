@@ -1,3 +1,4 @@
+import FooterBanner from "@/app/ui/components/banners/FooterBanner"
 import HomeBanners from "@/app/ui/pages/homepage/banners/HomeBanners"
 
 /**
@@ -9,6 +10,17 @@ export default function Home() {
     <main>
       {/* Banners */}
       <HomeBanners />
+
+      {/* Category */}
+
+      {/* Products */}
+
+      {/* Banners Recommendation */}
+
+      {/* Discount Products */}
+
+      {/* Footer Banner */}
+      <FooterBanner />
     </main>
   )
 }
