@@ -135,6 +135,11 @@ export default {
       /** Espaçamentos personalizados. */
       spacing: {
         "22": "88px",
+        "26": "104px",
+      },
+      /** Altura da linha. */
+      lineHeight: {
+        "11": "48px",
       },
     },
   },
