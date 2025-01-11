@@ -19,7 +19,7 @@ export default function FooterBanner() {
     >
       <div className="flex flex-col gap-3">
         {/* Título */}
-        <h2 className="text-white font-thin text-5xl leading-11">
+        <h2 className="text-white font-thin text-5xl leading-11 md:text-7xl">
           {title.normal} <strong className="font-medium">{title.bolder}</strong>
         </h2>
 
