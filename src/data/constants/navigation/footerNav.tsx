@@ -20,7 +20,7 @@ export const footerNavigation: ContextualMenu[] = [
   },
   // Assistência ao consumidor
   {
-    mainLink: { text: "Assistance to the buyer", href: "assistance" },
+    mainLink: { text: "Assistance to the buyer", href: "/assistance" },
     subLinks: [
       { text: "Find an order", href: "/find-an-order" },
       { text: "Terms of delivery", href: "/terms-of-delivery" },
