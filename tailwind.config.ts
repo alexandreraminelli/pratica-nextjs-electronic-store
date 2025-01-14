@@ -134,13 +134,13 @@ export default {
       },
       /** Espaçamentos personalizados. */
       spacing: {
-        "13": "52px",
-        "22": "88px",
-        "26": "104px",
+        "13": "3.25rem /* 52px */",
+        "22": "5.5rem /* 88px */",
+        "26": "6.5rem /* 104px */",
       },
       /** Altura da linha. */
       lineHeight: {
-        "11": "48px",
+        "11": "3rem /* 48px */",
       },
       /** Imagens de background. */
       backgroundImage: {
