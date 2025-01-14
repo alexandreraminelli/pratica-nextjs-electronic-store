@@ -1,4 +1,5 @@
 import CategoryCardGroup from "@/app/ui/components/cards/CategoryCardGroup"
+import PaginationArrows from "@/app/ui/components/pagination/PaginationArrows"
 
 /**
  * Seção de buscar produtos por categoria.
@@ -10,14 +11,15 @@ export default function BrowseByCategory() {
   return (
     <section
       className="flex flex-col
-        pd-container py-16 gap-12
+        pd-container py-16 md:py-20 gap-12 md:gap-8 
         bg-color-26"
     >
-      <header>
+      <header className="flex flex-row justify-between items-center">
         {/* Título */}
         <h2 className="font-medium text-2xl">Browse By Category</h2>
 
         {/* Setas de paginação */}
+        <PaginationArrows />
       </header>
 
       {/* Cards de categorias */}
