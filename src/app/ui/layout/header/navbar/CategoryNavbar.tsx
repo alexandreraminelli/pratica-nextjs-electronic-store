@@ -1,6 +1,6 @@
 "use client"
 
-import { categoryNavbar } from "@/data/constants/navigation/categoryNavbar"
+import { categoryRoutes } from "@/data/constants/navigation/categoryRoutes"
 import clsx from "clsx"
 import useIsActive from "@/data/hooks/navigation/isActive"
 import { NavLinkWithIcon } from "@/data/model/navigation/NavLink"
@@ -35,7 +35,7 @@ export default function CategoryNavbar({ className }: CategoryNavbarProps) {
       ${className}
     `}
     >
-      {categoryNavbar.map((link, index) => (
+      {categoryRoutes.map((link, index) => (
         <CategoryLink key={index} link={link} />
       ))}
     </nav>
