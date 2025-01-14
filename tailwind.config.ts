@@ -134,6 +134,7 @@ export default {
       },
       /** Espaçamentos personalizados. */
       spacing: {
+        "13": "52px",
         "22": "88px",
         "26": "104px",
       },
