@@ -6,7 +6,10 @@ import { categoryRoutes } from "@/data/constants/navigation/categoryRoutes"
  */
 export default function CategoryCardGroup() {
   return (
-    <div>
+    <div
+      className="grid grid-cols-auto-fit-40
+      gap-4"
+    >
       {categoryRoutes.map((category, index) => (
         <CategoryCard key={index} category={category} />
       ))}

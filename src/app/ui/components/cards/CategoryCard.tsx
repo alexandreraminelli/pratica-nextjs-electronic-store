@@ -23,7 +23,7 @@ export default function CategoryCard(
   return (
     <Link
       href={href}
-      className="flex flex-col items-center
+      className="flex flex-col items-center justify-center
         py-6 px-13 gap-2
         bg-color-36 text-foreground rounded-2xl
         hover:bg-color-39 border-2 hover:border-foreground transition-colors"
@@ -32,7 +32,7 @@ export default function CategoryCard(
       <Icon aria-hidden className="size-12" strokeWidth={1.5} />
 
       {/* Título */}
-      <h3 className="font-medium text-base text-center">{text}</h3>
+      <h3 className="font-medium text-base text-center text-nowrap">{text}</h3>
     </Link>
   )
 }
