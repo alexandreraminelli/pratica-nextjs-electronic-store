@@ -134,6 +134,7 @@ export default {
       },
       /** Espaçamentos personalizados. */
       spacing: {
+        "13": "52px",
         "22": "88px",
         "26": "104px",
       },
@@ -145,6 +146,10 @@ export default {
       backgroundImage: {
         "bigSummerSale-mobile": "url('/banners/big-summer-sale/big-summer-sale-mobile.png')",
         "bigSummerSale-desktop": "url('/banners/big-summer-sale/big-summer-sale-desktop.png')",
+      },
+      /** Templates de colunas do grid layout. */
+      gridTemplateColumns: {
+        "auto-fit-40": "repeat(auto-fit,minmax(10rem /* 160px */,1fr))",
       },
     },
   },

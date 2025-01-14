@@ -1,5 +1,6 @@
 import FooterBanner from "@/app/ui/components/banners/FooterBanner"
 import HomeBanners from "@/app/ui/pages/homepage/banners/HomeBanners"
+import BrowseByCategory from "@/app/ui/sections/BrowseByCategory"
 
 /**
  * Página inicial do site.
@@ -11,7 +12,8 @@ export default function HomePage() {
       {/* Banners */}
       <HomeBanners />
 
-      {/* Category */}
+      {/* Browse by Category */}
+      <BrowseByCategory />
 
       {/* Products */}
 
