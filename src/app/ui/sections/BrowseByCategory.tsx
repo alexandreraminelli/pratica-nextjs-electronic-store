@@ -1,3 +1,5 @@
+import CategoryCardGroup from "@/app/ui/components/cards/CategoryCardGroup"
+
 /**
  * Seção de buscar produtos por categoria.
  * Possui um grupo de cards com um link que abre o catálogo de produtos na categoria.
@@ -19,6 +21,7 @@ export default function BrowseByCategory() {
       </header>
 
       {/* Cards de categorias */}
+      <CategoryCardGroup />
     </section>
   )
 }
