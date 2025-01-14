@@ -2,7 +2,7 @@ import { NavLinkWithIcon } from "@/data/model/navigation/NavLink"
 import { CameraIcon, Gamepad2Icon, HeadphonesIcon, LaptopIcon, SmartphoneIcon, WatchIcon } from "lucide-react" // ícones
 
 /** Rota de pesquisa de categoria. */
-const categoryRoute: string = "/category"
+const categoryRoute: string = "/catalog"
 
 /**
  * Links do navbar de categorias.
