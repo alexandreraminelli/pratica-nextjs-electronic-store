@@ -35,7 +35,7 @@ function PaginationArrowButton(
 ) {
   return (
     <button aria-label="button">
-      <Icon strokeWidth={1.5} className="size-8" />
+      <Icon strokeWidth={1.5} className="size-8 hover:text-zinc-500 transition-colors" />
     </button>
   )
 }
