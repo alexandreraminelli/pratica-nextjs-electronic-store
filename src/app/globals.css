@@ -158,3 +158,9 @@ body {
     padding-inline: var(--pd-container);
   }
 }
+
+/* Texto selecionado */
+::selection {
+  background-color: var(--blue-dark);
+  color: white;
+}
