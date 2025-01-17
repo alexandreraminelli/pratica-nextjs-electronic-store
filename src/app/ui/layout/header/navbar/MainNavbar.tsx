@@ -1,7 +1,7 @@
 "use client"
 
 import { mainNavbar } from "@/data/constants/navigation/mainNavbar" // links do navbar
-import useIsActive from "@/data/hooks/navigation/isActive" // verificar se link está ativo
+import useIsActive from "@/data/hooks/navigation/useIsActive" // verificar se link está ativo
 import NavLink from "@/data/model/navigation/NavLink"
 import clsx from "clsx" // classes condicionais
 import Link from "next/link"

@@ -2,7 +2,7 @@
 
 import { categoryRoutes } from "@/data/constants/navigation/categoryRoutes"
 import clsx from "clsx"
-import useIsActive from "@/data/hooks/navigation/isActive"
+import useIsActive from "@/data/hooks/navigation/useIsActive"
 import { NavLinkWithIcon } from "@/data/model/navigation/NavLink"
 import Link from "next/link"
 
