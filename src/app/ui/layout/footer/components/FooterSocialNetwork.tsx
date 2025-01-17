@@ -13,8 +13,7 @@ export default function FooterSocialNetwork() {
       className="
       flex flex-row
       w-full justify-center md:justify-start
-      gap-4
-      text-white"
+      gap-4"
     >
       {socialNetworkWithIcon.map((social, index) => (
         <SocialLink key={index} socialNetwork={social} />
@@ -45,7 +44,7 @@ function SocialLink(
       href={socialNetwork.url} // link
       target="_blank"
       aria-label={`Link para ${socialNetwork.socialNetwork.title}`}
-      className="size-6"
+      className="size-6 text-white hover:text-zinc-400 transition-colors"
     >
       <socialNetwork.Icon />
     </Link>
