@@ -10,6 +10,14 @@ import seedSmartphone from "@/utils/database/createTables/seedSmartphone"
  * @author Alexandre Raminelli
  */
 export async function GET() {
+  // Verificar se está em ambiente de desenvolvimento
+  if (process.env.NODE_ENV !== "development") {
+    return Response.json(
+      { message: "This action is only allowed in development environment." },
+      { status: 403 } // Forbidden (não autorizada)
+    )
+  }
+
   try {
     // Criar e popular as tabelas do banco de dados.
     await client.sql`BEGIN` // iniciar transação
