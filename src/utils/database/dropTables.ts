@@ -5,5 +5,5 @@ import client from "./client"
  * @author Alexandre Raminelli
  */
 export default async function dropTables() {
-  await client.sql`DROP TABLE IF EXISTS brand, product, smartphone CASCADE;`
+  await client.sql`DROP TABLE IF EXISTS brand, cpu, product, smartphone CASCADE;`
 }
