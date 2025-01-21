@@ -1,9 +1,4 @@
-import { db } from "@vercel/postgres"
-
-/**
- * Cliente do banco de dados.
- */
-const client = await db.connect()
+import client from "@/utils/database/client"
 
 /**
  * Função que deleta todas as tabelas do banco de dados.
