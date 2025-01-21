@@ -19,7 +19,7 @@ export default function LogoLink(
   { className, size = { w: 96, h: 32 } }: LogoLinkProps // props
 ) {
   return (
-    <Link href={"/"} className={className}>
+    <Link href={"/"} className={`hover:text-zinc-700 dark:hover:text-zinc-400 transition-colors ${className}`}>
       <Logo width={size.w} height={size.h} />
     </Link>
   )
