@@ -1,6 +1,7 @@
 import client from "@/utils/database/client"
 import dropTables from "@/utils/database/dropTables"
 import seedBrand from "@/utils/database/createTables/seedBrand"
+import seedCpu from "@/utils/database/createTables/seedCpu"
 import seedProduct from "@/utils/database/createTables/seedProduct"
 import seedSmartphone from "@/utils/database/createTables/seedSmartphone"
 
@@ -16,6 +17,7 @@ export async function GET() {
     await dropTables() // apagar tabelas já existentes
 
     await seedBrand()
+    await seedCpu()
     await seedProduct()
     await seedSmartphone()
 
