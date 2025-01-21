@@ -13,9 +13,11 @@ export default async function seedProduct() {
   await client.sql`
     CREATE TABLE IF NOT EXISTS product (
         product_id UUID DEFAULT uuid_generate_v4() PRIMARY KEY, -- identificador
-        name VARCHAR(255) NOT NULL UNIQUE, -- nome do produto
-        price INT NOT NULL,  -- preço (em centavos)
         brand UUID NOT NULL REFERENCES brand(brand_id) -- marca do produto
-    );
-  `
+        name VARCHAR(45) NOT NULL UNIQUE, -- nome do produto
+        price_in_cents INT NOT NULL,  -- preço (em centavos)
+        description TEXT, -- descrição do produto
+        details TEXT, -- texto de detalhes do produto
+        guaranteed_years INT -- anos de garantia
+    );`
 }
