@@ -28,7 +28,11 @@ export default async function seedCpu() {
     ('MediaTek Dimensity 9000', 8),
     ('Kirin 9000', 8),
     ('Snapdragon 888', 8),
-    ('Apple M1', 8)
+    ('Apple M1', 8),
+    ('Qualcomm Snapdragon 8 Gen 1', 8),
+    ('Exynos 1380', 8),
+    ('Exynos 1330', 8),
+    ('Qualcomm Snapdragon 888', 8)
     ON CONFLICT (name) DO NOTHING; -- Evitar duplicação se a seed for rodada novamente
   `
 }
