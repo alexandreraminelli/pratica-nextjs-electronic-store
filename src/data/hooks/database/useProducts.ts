@@ -1,3 +1,5 @@
+import ProductModel from "@/data/model/products/ProductModel"
+
 import { useEffect, useState } from "react"
 
 /**
@@ -6,7 +8,7 @@ import { useEffect, useState } from "react"
  */
 export function useProducts() {
   // definição de estados
-  const [products, setProducts] = useState<any[]>([])
+  const [products, setProducts] = useState<ProductModel[]>([])
   const [loading, setLoading] = useState(true)
 
   // buscar os produtos
