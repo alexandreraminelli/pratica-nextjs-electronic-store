@@ -1,6 +1,7 @@
 "use client"
 
 import { useProducts } from "@/data/hooks/database/useProducts"
+import ProductCard from "./ProductCard"
 
 /**
  * Catálogo de produtos.
@@ -17,11 +18,7 @@ export default function ProductCatalog() {
   return (
     <div>
       {products.map((product) => (
-        <div key={product.product_id}>
-          <h2>{product.name}</h2>
-          <p>Preço: R$ {(product.price_in_cents / 100).toFixed(2)}</p>
-          {product.description && <p>{product.description}</p>}
-        </div>
+        <ProductCard key={product.product_id} product={product} />
       ))}
     </div>
   )
