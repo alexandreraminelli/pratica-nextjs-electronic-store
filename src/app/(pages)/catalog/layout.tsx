@@ -26,5 +26,12 @@ interface CatalogLayoutProps {
 export default function CatalogLayout(
   { children }: Readonly<CatalogLayoutProps> // params
 ) {
-  return <main>{children}</main>
+  return (
+    <main>
+      {/* Filtros */}
+
+      {/* Lista de produtos */}
+      {children}
+    </main>
+  )
 }
