@@ -16,7 +16,11 @@ export default function ProductCatalog() {
   if (loading) return <p>Carregando produtos...</p>
 
   return (
-    <div>
+    <div
+      aria-label="products catalog"
+      className="grid grid-cols-auto-fit-42
+      gap-4"
+    >
       {products.map((product) => (
         <ProductCard key={product.product_id} product={product} />
       ))}
