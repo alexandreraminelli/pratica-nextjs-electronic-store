@@ -149,8 +149,9 @@ export default {
       },
       /** Templates de colunas do grid layout. */
       gridTemplateColumns: {
-        "auto-fit-40": "repeat(auto-fit,minmax(10rem /* 160px */,1fr))",
-        "auto-fit-42": "repeat(auto-fit,minmax(10.5rem /* 168px */,1fr))",
+        "auto-fit-40": "repeat(auto-fit, minmax(10rem /* 160px */, 1fr))",
+        "auto-fit-42": "repeat(auto-fit, minmax(10.5rem /* 168px */, 1fr))",
+        "auto-fit-54": "repeat(auto-fit, minmax(13.5rem /* 216px */, 1fr))",
       },
     },
   },

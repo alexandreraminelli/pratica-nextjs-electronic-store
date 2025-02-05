@@ -13,13 +13,14 @@ export default function ProductCatalog() {
   const { products, loading } = useProducts()
 
   // Mensagem de carregamento
-  if (loading) return <p>Carregando produtos...</p>
+  if (loading) return <p>Getting products...</p>
 
   return (
     <div
       aria-label="products catalog"
-      className="grid grid-cols-auto-fit-42
-      gap-4 pd-container"
+      className="grid grid-cols-auto-fit-42 lg:grid-cols-auto-fit-66
+      gap-4 pd-container
+      transition-all"
     >
       {products.map((product) => (
         <ProductCard key={product.product_id} product={product} />
