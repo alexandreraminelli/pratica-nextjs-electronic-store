@@ -1,6 +1,7 @@
 import ProductModel from "@/data/model/products/ProductModel"
 import { HeartIcon } from "lucide-react"
 import Button from "@/app/ui/components/buttons/Button"
+import Image from "next/image"
 
 /**
  * Cards de produtos.
@@ -22,7 +23,9 @@ export default function ProductCard(
       <HeartIcon className="ms-auto" />
 
       {/* Imagem do produto */}
-      <picture></picture>
+      <picture>
+        <ProductImage image={product.image} altText={product.name} />
+      </picture>
 
       <div className="flex flex-col gap-4">
         {/* Informações */}
@@ -42,4 +45,26 @@ export default function ProductCard(
 interface ProductCardsProps {
   /** Produto a ser renderizado. */
   product: ProductModel
+}
+
+/** Imagem do produto. */
+function ProductImage(
+  { image = "/favicon.svg", altText }: ProductImageProps // props
+) {
+  return (
+    <Image
+      src={image !== "" ? image : "/favicon.svg"} // image URL
+      alt={altText}
+      // dimensões:
+      height={104}
+      width={104}
+    />
+  )
+}
+/** Props de `ProductImage`. */
+interface ProductImageProps {
+  /** Imagem do produto. */
+  image?: string
+  /** Texto alternativo. */
+  altText: string
 }

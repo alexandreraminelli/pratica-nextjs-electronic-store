@@ -16,6 +16,7 @@ export default async function seedProduct() {
         brand UUID NOT NULL REFERENCES brand(brand_id), -- marca do produto
         name VARCHAR(45) NOT NULL UNIQUE, -- nome do produto
         price_in_cents INT NOT NULL,  -- preço (em centavos)
+        image TEXT, -- imagem do produto
         description TEXT, -- descrição do produto
         details TEXT, -- texto de detalhes do produto
         guaranteed_years INT -- anos de garantia

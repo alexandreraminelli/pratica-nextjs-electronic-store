@@ -11,6 +11,8 @@ export default interface ProductModel {
   name: string
   /** Preço do produto (em centavos). */
   price_in_cents: number
+  /** Imagem do produto. */
+  image?: string
   /** Descrição do produto. */
   description: string
   /** Detalhes do produto. */
