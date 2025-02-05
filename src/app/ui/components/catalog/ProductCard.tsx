@@ -13,9 +13,9 @@ export default function ProductCard(
   return (
     <div
       aria-label="product card"
-      className="flex flex-col
+      className="flex flex-col items-center
       bg-color-16 hover:bg-color-39 rounded-lg
-      border-2 border-transparent hover:border-white
+      border-2 border-transparent hover:border-foreground
       transition-colors
       py-6 px-3 gap-2"
     >
@@ -23,11 +23,9 @@ export default function ProductCard(
       <HeartIcon className="ms-auto" />
 
       {/* Imagem do produto */}
-      <picture>
-        <ProductImage image={product.image} altText={product.name} />
-      </picture>
+      <ProductImage image={product.image} altText={product.name} />
 
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col w-full gap-4">
         {/* Informações */}
         <div>
           {/* Nome do produto */}
@@ -36,7 +34,7 @@ export default function ProductCard(
           <p>${product.price_in_cents / 100}</p>
         </div>
         {/* Botão de comprar */}
-        <Button text="Buy Now" className="text-nowrap" />
+        <Button text="Buy Now" size="small" className="text-nowrap" />
       </div>
     </div>
   )
@@ -52,13 +50,17 @@ function ProductImage(
   { image = "/favicon.svg", altText }: ProductImageProps // props
 ) {
   return (
-    <Image
-      src={image !== "" ? image : "/favicon.svg"} // image URL
-      alt={altText}
-      // dimensões:
-      height={104}
-      width={104}
-    />
+    <picture>
+      <Image
+        src={image !== "" ? image : "/favicon.svg"} // image URL
+        alt={altText}
+        // dimensões:
+        height={1600}
+        width={1600}
+        className="object-contain w-auto h-26 md:h-40
+        rounded-md transition-all"
+      />
+    </picture>
   )
 }
 /** Props de `ProductImage`. */

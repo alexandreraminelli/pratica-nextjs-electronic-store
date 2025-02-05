@@ -19,7 +19,7 @@ export default function ProductCatalog() {
     <div
       aria-label="products catalog"
       className="grid grid-cols-auto-fit-42
-      gap-4"
+      gap-4 pd-container"
     >
       {products.map((product) => (
         <ProductCard key={product.product_id} product={product} />
