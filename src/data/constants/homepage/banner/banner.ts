@@ -16,7 +16,7 @@ export const mainBanner: ProductBannerModel = {
   slogan: "Pro.Beyond.",
   image: `${bannerImgRoute}/iphone.png`,
   imageDesktop: `${bannerImgRoute}/iphone-lg.png`,
-  link: "/smartphones", // link de teste
+  link: "/catalog", // link de teste
 }
 
 /**
@@ -63,7 +63,7 @@ export const otherBanners: ProductBannerModel[] = [
     imageMobSize: { w: 331, h: 200 },
     imageDesktop: `${bannerImgRoute}/macbookair-clip.png`,
     imageDeskSize: { w: 292, h: 502 },
-    link: "/computers",
+    link: "/catalog",
     button: true,
     style: 4,
   },
@@ -80,5 +80,5 @@ export const bigSummerSaleBanner: CTABannerModel = {
     bolder: "Sale",
   },
   subtitle: "Commodo fames vitae vitae leo mauris in. Eu consequat.",
-  href: "/",
+  href: "/catalog",
 }
