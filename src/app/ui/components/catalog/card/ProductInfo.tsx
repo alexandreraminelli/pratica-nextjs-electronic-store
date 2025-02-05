@@ -7,11 +7,14 @@ export default function ProductInfo(
   { name, price }: ProductInfoProps // props
 ) {
   return (
-    <div>
+    <div
+      className="flex flex-col gap-4
+        text-center"
+    >
       {/* Nome do produto */}
-      <h2>{name}</h2>
+      <h3 className="font-medium">{name}</h3>
       {/* Preço do produto */}
-      <p>{priceToCurrency(price)}</p>
+      <p className="font-semibold text-2xl">{priceToCurrency(price)}</p>
     </div>
   )
 }
