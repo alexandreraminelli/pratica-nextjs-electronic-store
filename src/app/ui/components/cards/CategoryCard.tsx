@@ -26,7 +26,7 @@ export default function CategoryCard(
       className="flex flex-col items-center justify-center
         py-6 px-13 gap-2
         bg-color-36 text-foreground rounded-2xl
-        hover:bg-color-39 border-2 border-transparent hover:border-foreground transition-colors"
+        hover:bg-color-36 border-2 border-transparent hover:border-foreground transition-colors"
     >
       {/* Ícone */}
       <Icon aria-hidden className="size-12" strokeWidth={1.5} />
