@@ -18,7 +18,7 @@ export default function MainBanner() {
       className="
       flex flex-col items-center md:flex-row md:justify-between
       bg-raisinblack
-      pd-container pt-22 md:pt-0
+      px-container pt-22 md:pt-0
       gap-12"
       role="banner"
     >

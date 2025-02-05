@@ -19,7 +19,7 @@ export default function ProductCatalog() {
     <div
       aria-label="products catalog"
       className="grid grid-cols-auto-fit-42 lg:grid-cols-auto-fit-66
-      gap-4 pd-container
+      gap-4 px-container
       transition-all"
     >
       {products.map((product) => (

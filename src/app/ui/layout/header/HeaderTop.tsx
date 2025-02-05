@@ -15,7 +15,7 @@ export default function HeaderTop() {
     <div
       // Estilos:
       className="
-        py-6 pd-container
+        py-6 px-container
         flex flex-row items-center justify-between
         bg-background
         gap-3 md:gap-8

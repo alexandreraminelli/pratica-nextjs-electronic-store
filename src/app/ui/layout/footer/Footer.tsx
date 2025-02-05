@@ -15,7 +15,7 @@ export default function Footer() {
       gap-8 md:gap-6
       bg-dark-27 lg:bg-black
       text-light-9
-      py-12 pd-container
+      py-12 px-container
       "
     >
       <div

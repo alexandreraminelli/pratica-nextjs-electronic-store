@@ -12,7 +12,7 @@ const { title, subtitle, href } = bigSummerSaleBanner
 export default function FooterBanner() {
   return (
     <aside
-      className="flex flex-col justify-center items-center text-center py-26 gap-10 pd-container
+      className="flex flex-col justify-center items-center text-center py-26 gap-10 px-container
       max-md:bg-bigSummerSale-mobile md:bg-bigSummerSale-desktop
       bg-no-repeat bg-cover bg-center 
       max-md:aspect-[375/512] md:aspect[45/14]"

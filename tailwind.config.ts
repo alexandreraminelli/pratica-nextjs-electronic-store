@@ -134,6 +134,10 @@ export default {
       },
       /** Espaçamentos personalizados. */
       spacing: {
+        // Container
+        container: "var(--container-spacing)",
+        "container-size": "var(--container)",
+
         "13": "3.25rem /* 52px */",
         "22": "5.5rem /* 88px */",
         "26": "6.5rem /* 104px */",

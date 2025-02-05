@@ -27,7 +27,7 @@ export default async function CategoryPage(
 
   // retorno da página
   return (
-    <div className="pd-container py-20">
+    <div className="px-container py-20">
       <h1 className="text-center text-5xl">Catalog of {category}</h1>
     </div>
   )

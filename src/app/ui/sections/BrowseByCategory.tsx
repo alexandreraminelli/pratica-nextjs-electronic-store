@@ -11,7 +11,7 @@ export default function BrowseByCategory() {
   return (
     <section
       className="flex flex-col
-        pd-container py-16 md:py-20 gap-12 md:gap-8 
+        px-container py-16 md:py-20 gap-12 md:gap-8 
         bg-color-26"
     >
       <header className="flex flex-row justify-between items-center">
