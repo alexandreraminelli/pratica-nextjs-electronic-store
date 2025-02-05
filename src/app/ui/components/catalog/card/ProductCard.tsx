@@ -1,7 +1,8 @@
+import Button from "@/app/ui/components/buttons/Button"
 import ProductModel from "@/data/model/products/ProductModel"
 import { HeartIcon } from "lucide-react"
-import Button from "@/app/ui/components/buttons/Button"
 import Image from "next/image"
+import ProductInfo from "./ProductInfo"
 
 /**
  * Cards de produtos.
@@ -27,12 +28,7 @@ export default function ProductCard(
 
       <div className="flex flex-col w-full gap-4">
         {/* Informações */}
-        <div>
-          {/* Nome do produto */}
-          <h2>{product.name}</h2>
-          {/* Preço do produto */}
-          <p>${product.price_in_cents / 100}</p>
-        </div>
+        <ProductInfo name={product.name} price={product.price_in_cents} />
         {/* Botão de comprar */}
         <Button text="Buy Now" size="small" className="text-nowrap" />
       </div>
