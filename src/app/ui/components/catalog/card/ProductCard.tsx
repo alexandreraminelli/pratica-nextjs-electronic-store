@@ -14,11 +14,12 @@ export default function ProductCard(
   return (
     <div
       aria-label="product card"
-      className="flex flex-col items-center
+      className="flex flex-col items-center justify-between
       bg-color-16 hover:bg-color-39 rounded-lg
-      border-2 border-transparent hover:border-foreground
+      cursor-pointer
       transition-colors
-      py-6 px-3 gap-2"
+      py-6 px-3 gap-2
+      "
     >
       {/* Ícone de favorito */}
       <HeartIcon className="ms-auto" />
