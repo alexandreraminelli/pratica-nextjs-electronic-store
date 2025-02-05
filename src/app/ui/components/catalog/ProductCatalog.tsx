@@ -1,7 +1,7 @@
 "use client"
 
 import { useProducts } from "@/data/hooks/database/useProducts"
-import ProductCard from "./ProductCard"
+import ProductCard from "./card/ProductCard"
 
 /**
  * Catálogo de produtos.
